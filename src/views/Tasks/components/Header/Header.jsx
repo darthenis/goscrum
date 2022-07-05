@@ -44,7 +44,7 @@ export default function Header() {
                         <ul style={{animationName: phoneMenu && menu ? 'slide' : phoneMenu && menu !== null ? 'slideBack' : ''}}>
                             <li><button onClick={() => navigate('/donate')}>Donar</button></li>
                             <li>Tareas creadas: {tasks.length}</li>
-                            <li>{localStorage.getItem('userName')}</li>
+                            <li>{sessionStorage.getItem('userName')}</li>
                             <li className="out" onClick={handleLogout}>X</li>
                         </ul>
                         {phoneMenu ? <div style={{cursor: 'pointer'}}onClick={handleMenu}>{menu ? 'CERRAR' : 'MENU'}</div> :  ''}
