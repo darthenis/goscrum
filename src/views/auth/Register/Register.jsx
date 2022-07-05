@@ -70,7 +70,11 @@ export default function Register(){
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({user : values})
-        }).then(res => res.json()).then(data => navigate('/registered/' + data?.result?.user?.teamID))
+        }).then(res => res.json()).then(data => { 
+            
+            console.log('data: ', data)
+            
+            navigate('/registered/' + data?.result?.user?.teamID) })
     }
 
 
