@@ -43,7 +43,7 @@ export default function Header() {
                         <div><span>Go</span>scrum</div>
                         <ul style={{animationName: phoneMenu && menu ? 'slide' : phoneMenu && menu !== null ? 'slideBack' : ''}}>
                             <li><button onClick={() => navigate('/donate')}>Donar</button></li>
-                            <li>Tareas creadas: {tasks.length}</li>
+                            <li>Tareas creadas: {tasks.filter(e => e.user.userName === sessionStorage.getItem('userName')).length}</li>
                             <li>{sessionStorage.getItem('userName')}</li>
                             <li className="out" onClick={handleLogout}>X</li>
                         </ul>
