@@ -32,7 +32,7 @@ export const Card = ({ data: {_id, title, createdAt, user:{userName}, descriptio
                 <p>{userName}</p>
                 <div>
                     <button onClick={() => editCardStatus(data)}
-                            style={{backgroundColor: status === "NEW" ? 'var(---global-primary-color)' : status === "IN PROGRESS" ? 'rgb(255, 238, 0)' : 'green', color: status === "IN PROGRESS" ? 'black' : 'white'}}>{status}</button>
+                            style={{backgroundColor: status === "NEW" ? 'var(---global-primary-color)' : status === "IN PROGRESS" ? 'rgb(255, 238, 0)' : 'green', color: status === "IN PROGRESS" ? 'black' : 'white', cursor: "pointer"}}>{status}</button>
                     <button style={{backgroundColor: importance === "HIGH" ? 'var(---global-primary-color)' : importance === "MEDIUM" ? 'black' : 'rgb(79, 59, 252)', color: 'white'}}>{importance}</button>
                 </div>
                 <p>{cutDescription(description).string}</p>

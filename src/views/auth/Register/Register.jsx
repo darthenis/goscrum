@@ -4,8 +4,10 @@ import Switch from 'react-switch';
 import * as yup from 'yup';
 import {Link, useNavigate} from 'react-router-dom';
 import {v4 as uuid} from 'uuid';
+import { swal } from '../../../utils/alert';
 
 import '../Auth.style.css';
+import Spinner from '../../../utils/spinner/Spinner';
 
 const {REACT_APP_API_URL} = process.env;
 
@@ -14,6 +16,8 @@ export default function Register(){
     const [data, setData] = useState();
 
     const [checked, setChecked] = useState(false);
+
+    const [loading, setLoading] = useState(false)
 
     const navigate = useNavigate();
 
@@ -64,6 +68,8 @@ export default function Register(){
 
         }
 
+        setLoading(true)
+
         fetch(REACT_APP_API_URL+"/auth/register", {
             method: "POST",
             headers:{
@@ -71,10 +77,33 @@ export default function Register(){
             },
             body: JSON.stringify({user : values})
         }).then(res => res.json()).then(data => {
+
+                                                setLoading(false)
+
+                                                console.log('data: ', data)
+
+                                                if(data.status_code === 409){
+
+                                                    swal('Error en el registro', "Email ya se encuentra en uso")
+
+                                                    setLoading(false)
+
+                                                } else {
+
+                                                    navigate('/registered/' + data?.result?.user?.teamID) 
+                                                    setLoading(false)
+
+                                                }
             
-                                                 navigate('/registered/' + data?.result?.user?.teamID) 
+                                              
                                              }
-                                        )
+                                        ).catch(error => {
+
+                                            console.log('error: ', error)
+                                            setLoading(false)
+
+                                        })
+                                      
     }
 
 
@@ -148,7 +177,9 @@ export default function Register(){
                                     </Field>
                                     {errors.region && touched.region && <p>{errors.region}</p>}
                                 </div> }
-                            <button type="submit">Enviar</button>
+                            <button type="submit" style={{backgroundColor: loading && 'white'}}>
+                                {loading ? <Spinner/> : 'Enviar'}
+                                </button>
                             <Link to="/login" className="linkRegister">Ir a Iniciar sesión</Link>
                         </Form>
                         )}

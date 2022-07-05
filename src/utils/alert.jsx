@@ -2,10 +2,10 @@ import Swal from "sweetalert2";
 
 
 
-export const swal = () => 
+export const swal = (title, text) => 
     Swal.fire({
-        title: "Credenciales inválidas",
-        text: "Por favor verifique sus credenciales",
+        title: title,
+        text: text,
         confirmButtonText: "Aceptar",
         width: "400px",
         timer: 10000,

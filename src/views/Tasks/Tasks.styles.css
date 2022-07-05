@@ -118,4 +118,15 @@ main{
 }
 
 
+@media screen and (max-width: 500px){
+
+
+    .list-inputs{
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
 

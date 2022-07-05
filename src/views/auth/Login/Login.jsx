@@ -1,13 +1,17 @@
+import {useState} from 'react'
 import { Formik, Form, Field } from "formik"
 import {Link, useNavigate} from "react-router-dom"
 import * as Yup from "yup"
 import { swal } from "../../../utils/alert"
+import Spinner from "../../../utils/spinner/Spinner"
 
 import '../Auth.style.css'
 
 const {REACT_APP_API_URL} = process.env
 
 export default function Login(){
+
+    const [loading, setLoading] = useState(false)
 
     const navigate = useNavigate();
 
@@ -27,6 +31,8 @@ export default function Login(){
 
     const onSubmit = values => {
 
+        setLoading(true)
+
         fetch(REACT_APP_API_URL + "/auth/login", {
             method: "POST",
             headers: {
@@ -40,23 +46,26 @@ export default function Login(){
                 sessionStorage.setItem("token", data.result.token);
                 sessionStorage.setItem("userName", data.result.user.userName);
 
+                setLoading(false)
+
                 navigate("/tasks")
 
             } else {
 
-                swal()
+                setLoading(false)
+
+                swal("Credenciales inválidas", "Por favor verifique sus credenciales")
 
             }
 
-        }))
-        
-        
-        .catch(error => {
+        })).catch(error => {
 
 
             swal()
 
         })
+
+        
 
     }
 
@@ -84,7 +93,9 @@ export default function Login(){
                                         style={{border: errors.password && touched.password? 'solid 1px var(---global-primary-color)' : 'var(---global-border)'}} />
                                 {errors.password && touched.password && <p>{errors.password}</p>}
                             </div>
-                            <button type="submit">Enviar</button>
+                            <button type="submit" style={{backgroundColor: loading && 'white'}}>
+                                {loading ? <Spinner/> : 'Enviar'}
+                            </button>
                             <Link to="/register" className="linkRegister">Registrarme</Link>
                             </Form>
 
