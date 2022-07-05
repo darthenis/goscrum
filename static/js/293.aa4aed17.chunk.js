@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgoscrum=self.webpackChunkgoscrum||[]).push([[293],{293:function(e,r,n){n.r(r),n.d(r,{default:function(){return l}});var s=n(3504),i=n(6871),c=n(184);function l(){var e=(0,i.UO)().teamID;return(0,c.jsx)("div",{id:"container-registered",children:(0,c.jsxs)("div",{children:[(0,c.jsxs)("p",{children:["El teamID de tu equipo es: ",(0,c.jsx)("span",{style:{color:"var(---global-primary-color)"},children:e})]}),(0,c.jsx)(s.rU,{to:"/login",children:"Logearse"})]})})}}}]);
+//# sourceMappingURL=293.aa4aed17.chunk.js.map
