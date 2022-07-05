@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgoscrum=self.webpackChunkgoscrum||[]).push([[554],{1554:function(e,u,n){n.r(u),n.d(u,{default:function(){return s}});var r=n(6871),t=n(184);function s(){var e=(0,r.UO)().teamID;return(0,t.jsxs)("div",{children:["El teamID de tu equipo es: ",e]})}}}]);
+//# sourceMappingURL=554.b65fd423.chunk.js.map
