@@ -46,7 +46,9 @@ export const TaskForm = ({createTask}) => {
 
     const onSubmit = (values, actions) => {
 
-        createTask(values);
+       createTask(values);
+
+        actions.resetForm()
 
     }
 
@@ -85,7 +87,7 @@ export const TaskForm = ({createTask}) => {
                     initialValues={initialValues}
                     validationSchema={validationSchema}
                     onSubmit={onSubmit}>
-                {({errors, touched}) => (
+                {({errors, touched, resetForm}) => (
                         <Form >
                             <div className="flexFields">
                                 <div>
