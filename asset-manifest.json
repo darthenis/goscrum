@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/goscrum/static/css/main.c3a9c374.css",
-    "main.js": "/goscrum/static/js/main.26b80603.js",
+    "main.js": "/goscrum/static/js/main.329314df.js",
     "static/css/460.8aaa79b6.chunk.css": "/goscrum/static/css/460.8aaa79b6.chunk.css",
-    "static/js/460.01b7e63e.chunk.js": "/goscrum/static/js/460.01b7e63e.chunk.js",
+    "static/js/460.b7b1baac.chunk.js": "/goscrum/static/js/460.b7b1baac.chunk.js",
     "static/css/250.1b862f0b.chunk.css": "/goscrum/static/css/250.1b862f0b.chunk.css",
     "static/js/250.813cf7f5.chunk.js": "/goscrum/static/js/250.813cf7f5.chunk.js",
     "static/css/858.918048c7.chunk.css": "/goscrum/static/css/858.918048c7.chunk.css",
@@ -17,9 +17,9 @@
     "static/js/830.c8cf75fe.chunk.js": "/goscrum/static/js/830.c8cf75fe.chunk.js",
     "index.html": "/goscrum/index.html",
     "main.c3a9c374.css.map": "/goscrum/static/css/main.c3a9c374.css.map",
-    "main.26b80603.js.map": "/goscrum/static/js/main.26b80603.js.map",
+    "main.329314df.js.map": "/goscrum/static/js/main.329314df.js.map",
     "460.8aaa79b6.chunk.css.map": "/goscrum/static/css/460.8aaa79b6.chunk.css.map",
-    "460.01b7e63e.chunk.js.map": "/goscrum/static/js/460.01b7e63e.chunk.js.map",
+    "460.b7b1baac.chunk.js.map": "/goscrum/static/js/460.b7b1baac.chunk.js.map",
     "250.1b862f0b.chunk.css.map": "/goscrum/static/css/250.1b862f0b.chunk.css.map",
     "250.813cf7f5.chunk.js.map": "/goscrum/static/js/250.813cf7f5.chunk.js.map",
     "858.918048c7.chunk.css.map": "/goscrum/static/css/858.918048c7.chunk.css.map",
@@ -34,6 +34,6 @@
   },
   "entrypoints": [
     "static/css/main.c3a9c374.css",
-    "static/js/main.26b80603.js"
+    "static/js/main.329314df.js"
   ]
 }
