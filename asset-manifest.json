@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/goscrum/static/css/main.c3a9c374.css",
-    "main.js": "/goscrum/static/js/main.177cf0c5.js",
+    "main.js": "/goscrum/static/js/main.26b80603.js",
     "static/css/460.8aaa79b6.chunk.css": "/goscrum/static/css/460.8aaa79b6.chunk.css",
-    "static/js/460.e1f31658.chunk.js": "/goscrum/static/js/460.e1f31658.chunk.js",
-    "static/css/259.ae84b49b.chunk.css": "/goscrum/static/css/259.ae84b49b.chunk.css",
-    "static/js/259.f5278cb9.chunk.js": "/goscrum/static/js/259.f5278cb9.chunk.js",
-    "static/css/858.ae84b49b.chunk.css": "/goscrum/static/css/858.ae84b49b.chunk.css",
-    "static/js/858.d3470cc0.chunk.js": "/goscrum/static/js/858.d3470cc0.chunk.js",
+    "static/js/460.01b7e63e.chunk.js": "/goscrum/static/js/460.01b7e63e.chunk.js",
+    "static/css/250.1b862f0b.chunk.css": "/goscrum/static/css/250.1b862f0b.chunk.css",
+    "static/js/250.813cf7f5.chunk.js": "/goscrum/static/js/250.813cf7f5.chunk.js",
+    "static/css/858.918048c7.chunk.css": "/goscrum/static/css/858.918048c7.chunk.css",
+    "static/js/858.aa6914a4.chunk.js": "/goscrum/static/js/858.aa6914a4.chunk.js",
     "static/js/449.7db7a18f.chunk.js": "/goscrum/static/js/449.7db7a18f.chunk.js",
     "static/css/293.524fa8c0.chunk.css": "/goscrum/static/css/293.524fa8c0.chunk.css",
     "static/js/293.aa4aed17.chunk.js": "/goscrum/static/js/293.aa4aed17.chunk.js",
@@ -17,13 +17,13 @@
     "static/js/830.c8cf75fe.chunk.js": "/goscrum/static/js/830.c8cf75fe.chunk.js",
     "index.html": "/goscrum/index.html",
     "main.c3a9c374.css.map": "/goscrum/static/css/main.c3a9c374.css.map",
-    "main.177cf0c5.js.map": "/goscrum/static/js/main.177cf0c5.js.map",
+    "main.26b80603.js.map": "/goscrum/static/js/main.26b80603.js.map",
     "460.8aaa79b6.chunk.css.map": "/goscrum/static/css/460.8aaa79b6.chunk.css.map",
-    "460.e1f31658.chunk.js.map": "/goscrum/static/js/460.e1f31658.chunk.js.map",
-    "259.ae84b49b.chunk.css.map": "/goscrum/static/css/259.ae84b49b.chunk.css.map",
-    "259.f5278cb9.chunk.js.map": "/goscrum/static/js/259.f5278cb9.chunk.js.map",
-    "858.ae84b49b.chunk.css.map": "/goscrum/static/css/858.ae84b49b.chunk.css.map",
-    "858.d3470cc0.chunk.js.map": "/goscrum/static/js/858.d3470cc0.chunk.js.map",
+    "460.01b7e63e.chunk.js.map": "/goscrum/static/js/460.01b7e63e.chunk.js.map",
+    "250.1b862f0b.chunk.css.map": "/goscrum/static/css/250.1b862f0b.chunk.css.map",
+    "250.813cf7f5.chunk.js.map": "/goscrum/static/js/250.813cf7f5.chunk.js.map",
+    "858.918048c7.chunk.css.map": "/goscrum/static/css/858.918048c7.chunk.css.map",
+    "858.aa6914a4.chunk.js.map": "/goscrum/static/js/858.aa6914a4.chunk.js.map",
     "449.7db7a18f.chunk.js.map": "/goscrum/static/js/449.7db7a18f.chunk.js.map",
     "293.524fa8c0.chunk.css.map": "/goscrum/static/css/293.524fa8c0.chunk.css.map",
     "293.aa4aed17.chunk.js.map": "/goscrum/static/js/293.aa4aed17.chunk.js.map",
@@ -34,6 +34,6 @@
   },
   "entrypoints": [
     "static/css/main.c3a9c374.css",
-    "static/js/main.177cf0c5.js"
+    "static/js/main.26b80603.js"
   ]
 }
