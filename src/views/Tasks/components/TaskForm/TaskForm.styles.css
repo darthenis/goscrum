@@ -1,0 +1,110 @@
+
+.createTask > p {
+    margin-bottom: 5px;
+}
+
+.button{
+
+    background-color: var(---global-primary-color);
+    color: white;
+    border: 1px solid var(---global-primary-color);
+    border-radius: var(---global-radius);
+    width: 100px;
+    height: 37px;
+    margin-top: 10px;
+
+}
+
+.error{
+
+    border: 1px solid var(---global-primary-color) !important;
+
+}
+
+.button:hover{
+
+    background-color: white;
+    color: var(---global-primary-color);
+
+}
+
+.flexFields{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+    
+}
+
+.flexFields > div > input, select{
+
+    width: 100%;
+    border: var(---global-border);
+    border-radius: var(---global-radius);
+    padding: 10px;
+    font-size: 12px;
+    background-color: white;
+
+}
+
+.flexFields > div > span {
+
+    font-size: 12px;
+    color: var(---global-primary-color);
+
+}
+
+.textarea-container{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.textarea-container > span{
+
+    font-size: 12px;
+    color: var(---global-primary-color);
+
+}
+
+textarea{
+    font-size: 12px;
+    padding: 10px;
+    margin-top: 10px;
+    height: 100px;
+    resize: none;
+    border-radius: var(---global-radius);
+    border: var(---global-border);
+
+}
+
+@media screen and (max-width:500px){
+
+    .flexFields{
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+@media screen and (max-width: 958px){
+
+
+    .createTask{
+
+        padding: 0px 10px 0px 10px;
+
+    }
+
+}
+
+@media screen and (max-width: 1450px) {
+    .createTask{
+
+        padding-left: 10px;
+
+    }
+}

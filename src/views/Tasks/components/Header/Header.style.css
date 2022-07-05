@@ -1,0 +1,120 @@
+header{
+   
+    padding: 0px 10px 0px 10px;
+    box-shadow: 0 2px 5px 0 #dbdbdb;
+    font-family: 'Inter', sans-serif;;
+    font-size: 15px;
+}
+
+.container-header {
+    position: relative;
+    margin: 0 auto;
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    max-width: 1440px;
+
+}
+
+.container-header > div {
+
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.container-header > div > span{
+
+    color: var(---global-primary-color);
+    font-style: italic;
+    font-weight:900;
+    font-size: 20px;
+
+}
+
+.container-header > ul{
+
+    display : flex;
+    align-items: center;
+    list-style-type: none;
+
+}
+
+.container-header > ul > li{
+    margin-left: 10px;
+}
+
+.out {
+    cursor: pointer;
+    color: var(---global-primary-color);
+}
+
+.container-header > ul > li > button{
+
+    background-color: var(---global-primary-color);
+    width: 70px;
+    height: 25px;
+    color: white;
+    border: solid 1px var(---global-primary-color);
+    border-radius: var(---global-radius);
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.container-header > ul > li > button:hover{
+
+    background-color: white;
+    color : var(---global-primary-color);
+}
+
+@media screen and (max-width: 450px) {
+
+    .container-header{
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+        z-index: 20;
+
+    }
+
+    .container-header > ul {
+        z-index: 1;
+        position: absolute;
+        margin-top: 0px;
+        padding: 0px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        right: -500px;
+        gap: 20px;
+        top: 45px;
+        background-color: var(---global-secondary-color);
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        width: 100vw;
+        flex-direction: column;
+
+    }
+
+    .container-header > ul > li {
+
+        margin: 0px;
+
+    }
+
+}
+
+
+@keyframes slide {
+
+    from { right: -500px}
+    to {right: -10px}
+    
+}
+
+@keyframes slideBack {
+
+    from { right: -10px}
+    to {right: -500px}
+    
+}
